@@ -1,0 +1,130 @@
+/* General Styles */
+.place-order {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.place-order-left,
+.place-order-right {
+    width: 100%;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.title {
+    font-size: 1.2rem;
+    font-weight: 600;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.multi-fields {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+    margin-bottom: 10px;
+}
+
+.multi-fields input {
+    width: 48%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.place-order input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.place-order input:focus {
+    outline: none;
+    border-color: #007bff;
+}
+
+.cart-bottom {
+    margin-top: 20px;
+}
+
+.cart-total {
+    background-color: #f9f9f9;
+    padding: 15px;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+}
+
+.cart-total h2 {
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: #333;
+}
+
+.cart-total-details {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 0;
+    border-bottom: 1px solid #ddd;
+}
+
+.cart-total-details p {
+    font-size: 0.9rem;
+    color: #666;
+}
+
+.cart-total-details.font-bold {
+    font-weight: bold;
+}
+
+.btn-proceed {
+    background-color: #f44336;
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    padding: 12px;
+    width: 100%;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 20px;
+}
+
+.btn-proceed:hover {
+    background-color: #d32f2f;
+}
+
+.btn-proceed:active {
+    background-color: #c62828;
+}
+
+/* Responsive Styles */
+@media (min-width: 768px) {
+
+    .place-order-left,
+    .place-order-right {
+        width: 48%;
+    }
+
+    .place-order-left {
+        margin-right: 20px;
+    }
+}
+
+@media (min-width: 1024px) {
+    .place-order {
+        max-width: 1200px;
+        margin: 0 auto;
+    }
+
+    .place-order-left,
+    .place-order-right {
+        width: 48%;
+    }
+}
